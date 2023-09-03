@@ -1,0 +1,9 @@
+.message {
+    list-style-type: none;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.sender {
+    color: var(--contrast-color);
+}

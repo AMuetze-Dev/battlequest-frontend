@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Montserrat-Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./MontserratAlt1-Light.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "Montserrat-Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./MontserratAlt1-Black.ttf") format('truetype');
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--secondary-light-color);
+    overflow-x: hidden;
+  }
+  
+  #tsparticles {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Montserrat-Bold", sans-serif;
+    margin: 10px 0 15px 0;
+  }
+  
+  h4, h5 {
+    font-family: "Montserrat-Light", sans-serif;
+    margin: 10px 0;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    color: var(--contrast-color);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 4px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  
+  h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+  h4 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  
+  h5 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  button, input {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 0;
+  }
+  
+  button {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+  
+    background-color: var(--secondary-light-color);
+    color: var(--primary-dark-color);
+  }
+  
+  button.dark {
+    background-color: var(--secondary-dark-color);
+    color: var(--primary-light-color);
+  }
+  
+  input {
+    letter-spacing: 1px;
+    cursor: text;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--secondary-light-color); 
+    outline: none;
+  }
+  
+  input::-ms-reveal {
+    filter: invert(100%);
+  }
+  
+  input::placeholder {
+    color: rgba(var(--primary-light), 0.5);
+  }
+  
+  input:hover {
+    border-bottom-color: rgba(var(--contrast), 0.5);
+  }
+  
+  input:hover::placeholder {
+    color: rgba(var(--contrast), 0.5)
+  }
+  
+  .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgba(var(--contrast), 0.75);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #111;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
